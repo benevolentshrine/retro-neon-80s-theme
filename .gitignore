@@ -18,8 +18,8 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Gumroad package (keep source, ignore build)
-gumroad-package/*.vsix
+# Gumroad package
+gumroad-package/
 
 # Temporary files
 *.tmp
