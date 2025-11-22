@@ -53,7 +53,7 @@
 
 ```bash
 # Clone the repository
-git clone https://github.com/https://github.com/benevolentshrinebenevolentshrine/retro-neon-80s-theme.git
+git clone https://github.com/benevolentshrine/retro-neon-80s-theme.git
 
 # Copy to VS Code extensions directory
 # Windows
@@ -69,7 +69,7 @@ cp -r retro-neon-80s-theme ~/.vscode/extensions/
 
 ```bash
 # Clone the repository
-git clone https://github.com/https://github.com/benevolentshrinebenevolentshrine/retro-neon-80s-theme.git
+git clone https://github.com/benevolentshrine/retro-neon-80s-theme.git
 cd retro-neon-80s-theme
 
 # Install vsce (VS Code Extension Manager) if you don't have it
@@ -133,16 +133,19 @@ This theme looks amazing with:
 
 > **Note**: Add your own screenshots to the `screenshots/` folder to showcase the theme!
 
-### Python
-![Python Example](screenshots/python-example.png)
 
-### JavaScript
-![JavaScript Example](screenshots/javascript-example.png)
+![Main Editor View](screenshots/main.png)
+*Main Editor View*
 
-### HTML/CSS
-![HTML Example](screenshots/html-example.png)
+![Code Syntax Highlighting](screenshots/code.png)
+*Code Syntax Highlighting*
 
-*More screenshots coming soon!*
+![Theme Variants](screenshots/themes.png)
+*Theme Variants*
+
+![Agent View](screenshots/agent.png)
+*Agent View*
+
 
 ## ⚙️ Recommended Settings
 
@@ -242,11 +245,11 @@ If you enjoy this theme:
 - 🐛 **Report bugs** - Help make it better
 - 💬 **Share feedback** - Let us know what you think
 - 📢 **Share with friends** - Spread the retro love
-- 💰 **Support on Gumroad** - [Get premium support and updates](https://gumroad.com/https://github.com/benevolentshrinebenevolentshrine)
+- 💰 **Support on Gumroad** - [Get premium support and updates](https://gumroad.com/benevolentshrine)
 
 ## 🔗 Links
 
-- [GitHub Repository](https://github.com/https://github.com/benevolentshrinebenevolentshrine/retro-neon-80s-theme)
+- [GitHub Repository](https://github.com/benevolentshrine/retro-neon-80s-theme)
 - [Report an Issue](../../issues)
 - [Request a Feature](../../issues/new)
 - [Installation Guide](INSTALL.md)
