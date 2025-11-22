@@ -1,0 +1,214 @@
+/* Retro Neon 80s - Sample CSS */
+/* Demonstrates vibrant syntax highlighting for stylesheets */
+
+:root {
+  --neon-pink: #FF006E;
+  --neon-cyan: #00F5FF;
+  --neon-purple: #B026FF;
+  --neon-green: #39FF14;
+  --deep-purple: #0f0a1e;
+  --navy-blue: #16213e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Courier New', monospace;
+  background: linear-gradient(135deg, var(--deep-purple) 0%, var(--navy-blue) 100%);
+  color: #e0e0ff;
+  min-height: 100vh;
+}
+
+/* Neon glow effect */
+.neon-title {
+  font-size: 3rem;
+  text-align: center;
+  color: var(--neon-pink);
+  text-shadow: 
+    0 0 10px var(--neon-pink),
+    0 0 20px var(--neon-pink),
+    0 0 30px var(--neon-pink),
+    0 0 40px var(--neon-cyan);
+  animation: flicker 2s infinite alternate;
+}
+
+@keyframes flicker {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    opacity: 1;
+    text-shadow: 
+      0 0 10px var(--neon-pink),
+      0 0 20px var(--neon-pink),
+      0 0 30px var(--neon-pink),
+      0 0 40px var(--neon-cyan);
+  }
+  20%, 24%, 55% {
+    opacity: 0.8;
+    text-shadow: none;
+  }
+}
+
+/* Arcade container */
+#arcade-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.arcade-header {
+  margin-bottom: 3rem;
+}
+
+/* Navigation */
+.main-nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+  margin-top: 2rem;
+}
+
+.main-nav a {
+  color: var(--neon-cyan);
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--neon-cyan);
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.main-nav a:hover {
+  background: var(--neon-cyan);
+  color: var(--deep-purple);
+  box-shadow: 0 0 20px var(--neon-cyan);
+  transform: translateY(-2px);
+}
+
+/* Game Grid */
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.game-card {
+  background: rgba(22, 33, 62, 0.6);
+  border: 2px solid var(--neon-purple);
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.game-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 
+    0 10px 30px rgba(255, 0, 110, 0.3),
+    0 0 40px rgba(0, 245, 255, 0.2);
+  border-color: var(--neon-pink);
+}
+
+.game-card h2 {
+  color: var(--neon-pink);
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.game-description {
+  color: #e0e0ff;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+/* Play Button */
+.play-btn {
+  background: var(--neon-pink);
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.play-btn:hover {
+  background: var(--neon-purple);
+  box-shadow: 0 0 30px var(--neon-purple);
+  transform: scale(1.05);
+}
+
+.play-btn:active {
+  transform: scale(0.95);
+}
+
+/* Scoreboard */
+.scoreboard {
+  background: rgba(22, 33, 62, 0.8);
+  border: 2px solid var(--neon-green);
+  border-radius: 10px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.scoreboard h3 {
+  color: var(--neon-green);
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  color: var(--neon-cyan);
+  padding: 0.8rem;
+  text-align: left;
+  border-bottom: 2px solid var(--neon-cyan);
+}
+
+td {
+  padding: 0.8rem;
+  border-bottom: 1px solid rgba(176, 38, 255, 0.3);
+}
+
+tr:hover {
+  background: rgba(255, 0, 110, 0.1);
+}
+
+/* Footer */
+.arcade-footer {
+  text-align: center;
+  padding: 2rem;
+  color: var(--neon-purple);
+  border-top: 2px solid var(--neon-purple);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .neon-title {
+    font-size: 2rem;
+  }
+  
+  .game-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .main-nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}

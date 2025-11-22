@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Neon 80s - Arcade</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="neon-background">
+    <!-- Main Container -->
+    <div id="arcade-container">
+        <header class="arcade-header">
+            <h1 class="neon-title">🎮 RETRO ARCADE 🎮</h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#games">Games</a></li>
+                    <li><a href="#scores">High Scores</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Game Grid -->
+        <main class="game-grid">
+            <section class="game-card" data-game="space-invaders">
+                <h2>Space Invaders</h2>
+                <p class="game-description">
+                    Classic arcade shooter from the golden age
+                </p>
+                <button class="play-btn" onclick="startGame('space-invaders')">
+                    PLAY NOW
+                </button>
+            </section>
+
+            <section class="game-card" data-game="pac-man">
+                <h2>Pac-Man</h2>
+                <p class="game-description">
+                    Navigate the maze and collect all the dots
+                </p>
+                <button class="play-btn" onclick="startGame('pac-man')">
+                    PLAY NOW
+                </button>
+            </section>
+
+            <section class="game-card" data-game="tetris">
+                <h2>Tetris</h2>
+                <p class="game-description">
+                    The ultimate puzzle game of falling blocks
+                </p>
+                <button class="play-btn" onclick="startGame('tetris')">
+                    PLAY NOW
+                </button>
+            </section>
+        </main>
+
+        <!-- Score Board -->
+        <aside class="scoreboard">
+            <h3>🏆 High Scores 🏆</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Player</th>
+                        <th>Score</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>PLAYER_ONE</td>
+                        <td>999,999</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>ACE_GAMER</td>
+                        <td>888,888</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>RETRO_KID</td>
+                        <td>777,777</td>
+                    </tr>
+                </tbody>
+            </table>
+        </aside>
+
+        <!-- Footer -->
+        <footer class="arcade-footer">
+            <p>&copy; 2025 Retro Arcade | Made with 💜 in the 80s</p>
+        </footer>
+    </div>
+
+    <script src="arcade.js"></script>
+</body>
+</html>

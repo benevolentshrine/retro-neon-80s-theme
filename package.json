@@ -1,0 +1,43 @@
+{
+  "name": "retro-neon-80s",
+  "displayName": "Retro Neon 80s",
+  "description": "A stunning retro vintage 90s/80s aesthetic theme with vibrant neon colors and CRT monitor vibes",
+  "version": "1.0.0",
+  "publisher": "retro-themes",
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "retro",
+    "80s",
+    "90s",
+    "neon",
+    "vintage",
+    "aesthetic",
+    "vapor wave",
+    "synthwave",
+    "dark theme"
+  ],
+  "icon": "icon.png",
+  "galleryBanner": {
+    "color": "#1a0a2e",
+    "theme": "dark"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "label": "Retro Neon 80s",
+        "uiTheme": "vs-dark",
+        "path": "./themes/retro-neon-80s-color-theme.json"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/benevolentshrine/retro-neon-80s-theme"
+  },
+  "license": "MIT"
+}
